@@ -1,6 +1,6 @@
 #!/bin/bash
-while [ 0 < 1 ]
-do
+main(){
+
 ./ngrok/ngrok.exe config add-authtoken 2GcOiSIIzipf2UEFhN6231fbViF_2niJXUrPLDjnhHSv3vXD8
 ./ngrok/ngrok.exe tcp 3389
 sleep 5
@@ -9,4 +9,7 @@ echo sucess
 ./ngrok/ngrok.exe tpc 3389
 sleep 5
 echo sucess
-done
+sleep 2
+
+}
+main
