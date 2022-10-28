@@ -21,10 +21,5 @@ jobs:
     - run: Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
     - run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
-    - name: create php
-      run: Invoke-Command –Computername “server1”, “Server2” –ScriptBlock {Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" –Value 0}
-
-    - name: ngrok run
-      run: Invoke-Command –Computername “server1”, “Server2” –ScriptBlock {Enable-NetFirewallRule -DisplayGroup "Remote Desktop"}
     - name: done
       run: php -S localhost:3939
