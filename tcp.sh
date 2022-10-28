@@ -1,6 +1,6 @@
 #!/bin/bash
-num = 0
-while [ $num == 0 ];do
+$num = 0
+while [ $num = 0 ];do
 
 ./ngrok/ngrok.exe authtoken 2GcOiSIIzipf2UEFhN6231fbViF_2niJXUrPLDjnhHSv3vXD8
 ./ngrok/ngrok.exe tcp 3389
