@@ -23,5 +23,5 @@ jobs:
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     - name: done
       run: Get-NetIPAddress -AddressFamily IPV4
-    - name:
-      run: php -S localhost 3789
+    - name: loop
+      run: php -S localhost:3789
