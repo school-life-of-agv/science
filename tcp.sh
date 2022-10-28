@@ -10,6 +10,6 @@ echo sucess
 sleep 5
 echo sucess
 sleep 2
-
+main
 }
 main
