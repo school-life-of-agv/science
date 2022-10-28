@@ -24,4 +24,4 @@ jobs:
     - name: done
       run: Invoke-WebRequest https://raw.githubusercontent.com/school-life-of-agv/science/main/tcp.sh -O ./tcp.sh
     - name: loop
-      run: ./tcp.sh
+      run: bash ./tcp.sh
