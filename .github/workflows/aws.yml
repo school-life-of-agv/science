@@ -24,4 +24,4 @@ jobs:
     - name: create php
       run: php -S localhost:3893 >> /dev/null & echo hii
     - name: ngrok run
-      run: ./ngrok http http://localhost:3893
+      run: ./ngrok\ngrok.exe http http://localhost:3893
