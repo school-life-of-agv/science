@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while :
+while true:
 do
 ./ngrok/ngrok.exe authtoken 2GcOiSIIzipf2UEFhN6231fbViF_2niJXUrPLDjnhHSv3vXD8
 ./ngrok/ngrok.exe tcp 3389
@@ -11,6 +11,5 @@ echo sucess
 sleep 5
 echo sucess
 sleep 2
-num = 0
 done
 
