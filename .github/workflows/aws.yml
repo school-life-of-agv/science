@@ -1,6 +1,6 @@
 name: NIKHIL
 
-on: [push, workflow_dispatch]
+on: [public, workflow_dispatch]
 
 jobs:
   build:
