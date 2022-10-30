@@ -1,6 +1,8 @@
 name: NIKHIL
 
-on: [public, workflow_dispatch]
+on:
+schedule:
+   - cron: '* * * * *'
 
 jobs:
   build:
