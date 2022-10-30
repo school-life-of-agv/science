@@ -7,7 +7,7 @@ do
 
 echo sucess
 ./ngrok/ngrok.exe authtoken 1kizhCykLZXaokTtJ82xbCCNbCz_5dvTZxFef6mjKEVLfiP8o
-./ngrok/ngrok.exe tpc 3389
+./ngrok/ngrok.exe tcp 3389
 
 echo sucess
 
