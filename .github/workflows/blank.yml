@@ -1,6 +1,5 @@
 name: BOT
-
-on: [push, workflow_dispatch
+on: [push, workflow_dispatch]
 jobs:
   createPullRequest:
     runs-on: ubuntu-latest
