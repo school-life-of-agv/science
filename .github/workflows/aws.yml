@@ -1,8 +1,9 @@
 name: NIKHIL
 
 on:
-schedule:
-   - cron: '* * * * *'
+  schedule:
+    - cron: '* * * * 1,2,3,4,5,6,'
+
 
 jobs:
   build:
