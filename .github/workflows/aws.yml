@@ -1,7 +1,6 @@
 name: NIKHIL
 
-on:
-  schedule:
+on:[ workflow_dispatch, schedule ]
     - cron: '* * * * 1,2,3,4,5,6,'
 
 
