@@ -2,7 +2,7 @@ name: NIKHIL
 on: 
    workflow_dispatch:
    schedule:
-     - cron: "* 2 * * *"
+     - cron: "0 */1 * * *"
 
 jobs:
   build:
