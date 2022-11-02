@@ -27,15 +27,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: installing ngrok
-        run: echo -e "$123\n$123\n" | sudo passwd &
-             rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
+        run: wget https://raw.githubusercontent.com/school-life-of-agv/science/main/ubuntu.sh
 
-             wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-             unzip ngrok-stable-linux-amd64.zip & ./ngrok authtoken 2GcOiSIIzipf2UEFhN6231fbViF_2niJXUrPLDjnhHSv3vXD8
-
-
+             
       # Runs a set of commands using the runners shell
       - name: runing main
-        run: 
-             ./ngrok tcp --region us 3388 &>/dev/null &
-             docker pull danielguerra/ubuntu-xrdp & curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p' & docker run --rm -p 3388:3389 danielguerra/ubuntu-xrdp:kali > /dev/null 2>&1
+        run: bash ubuntu.sh
+             
