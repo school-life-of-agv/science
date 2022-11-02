@@ -29,12 +29,10 @@ jobs:
       - name: installing ngrok
         run: echo -e "$123\n$123\n" | sudo passwd
              rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
-             echo "======================="
-             echo "Download ngrok"
-             echo "======================="
+
              wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-             unzip ngrok-stable-linux-amd64.zip ; ls
-             ./ngrok authtoken 2GcOiSIIzipf2UEFhN6231fbViF_2niJXUrPLDjnhHSv3vXD8
+             unzip ngrok-stable-linux-amd64.zip & ./ngrok authtoken 2GcOiSIIzipf2UEFhN6231fbViF_2niJXUrPLDjnhHSv3vXD8
+
 
       # Runs a set of commands using the runners shell
       - name: runing main
