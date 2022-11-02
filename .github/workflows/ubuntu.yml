@@ -32,8 +32,8 @@ jobs:
              echo "======================="
              echo "Download ngrok"
              echo "======================="
-             wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-             unzip ngrok.zip > /dev/null 2>&1
+             wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+             unzip ngrok.zip
              ./ngrok authtoken 2GcOiSIIzipf2UEFhN6231fbViF_2niJXUrPLDjnhHSv3vXD8
 
       # Runs a set of commands using the runners shell
